@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <title>QRcode</title>
+    </head>
+    <body class="body">
+        <div class="container-fluid main">
+        <h1>
+            Qr code generator
+        </h1>
+        <form action="/" method="POST" class="container-fluid block">
+            <img src=<%=src%> alt="">
+            <div  class="container inputs" >
+                <input class="url" name="url" type="text" placeholder="Type your text here"">
+                <input type="submit" value="generate" id="submitbtn">
+            </div>
+        </form>
+        </div>
+
+    </body>
+
+</html>
