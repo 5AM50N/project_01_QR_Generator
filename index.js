@@ -8,6 +8,7 @@ const path = require("path")
 app.set("view engine", "ejs");
 app.use(bp.urlencoded({extended: false}));
 app.use(bp.json());
+app.set("views", __dirname + "/views");
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get("/",(req, res) => {
